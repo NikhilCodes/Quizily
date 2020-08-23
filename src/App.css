@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.App {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+
+.app-title {
+    font-family: "Pacifico", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    top: 5%;
+}
+
+.loader {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    width: 100%;
+}
+
+#login-page {
+    background: linear-gradient(slateblue, indigo);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-family: "Quicksand", sans-serif;
+}
+
+#login-form-container {
+    top: 15%;
+    font-size: 30px;
+    border-radius: 14px;
+    padding: 40px;
+}
+
+#nav-bar h4 {
+    font-family: "Pacifico", sans-serif;
+    padding: 5px;
+}
+
+.home-page {
+    background: linear-gradient(#442fac, #4d92ef);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.dashboard-cards {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgb(228, 229, 255);
+    border-radius: 6px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    box-shadow: rgba(4, 36, 36, 0.43) 0 6px 12px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.dashboard-cards:hover {
+    box-shadow: rgba(4, 36, 36, 0.43) 0 8px 30px;
+}
+
+.dashboard-cards:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.dashboard-cards ul {
+    list-style: circle;
+}
+
+.test-start-confirm {
+    margin: 60px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.test-cell {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #404040;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.test-cell h5 {
+    font-weight: 700;
+}
