@@ -55,7 +55,7 @@ function TestPage(props) {
       for (let i = 1; i <= data.metadata.n; i++) {
         let test = data[`q${i}`]
         _tests.push(<div className="test-cell" key={i}>
-          <h5>{test.question}</h5>
+          <h5>{`${i}) `}{test.question}</h5>
 
           <div onChange={onChangeSelection.bind(this, i)}>
             {test.options.map((opt,i_) => <div key={`${i}-${i_}`}>

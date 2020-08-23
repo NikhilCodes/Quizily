@@ -1,9 +1,13 @@
 import React from "react";
-import {Table} from "reactstrap"
+import {Container, Table} from "reactstrap"
 
 export default function ScoreboardPage(props) {
   let tableInfo = Object.keys(props.data)
-  return <div>
+  return <Container style={{
+    top: "20%",
+    position: "absolute"
+  }}>
+    <h2 className="text-white">Score Board</h2>
     <Table dark>
       <thead>
         <tr>
@@ -17,10 +21,10 @@ export default function ScoreboardPage(props) {
         return <tr key={index}>
           <th scope="row">{index+1}</th>
           <td>{value}</td>
-          <td>{props.data[value] + ' %'}</td>
+          <td>{props.data[value] + ' %   ' } {(props.data[value] < 80) ? <span style={{color: "orange"}}>{"Needs Improvement"}</span> : ""}</td>
         </tr>
       })}
       </tbody>
     </Table>
-  </div>
+  </Container>
 }
