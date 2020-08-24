@@ -41,7 +41,7 @@ export default function HomePage(props) {
         <Nav className="ml-auto" navbar>
           <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
-              {user.displayName}
+              {user ? user.displayName : null}
             </DropdownToggle>
             <DropdownMenu right>
               <DropdownItem onClick={props.logOutFunc}>Log Out</DropdownItem>
